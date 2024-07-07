@@ -621,6 +621,7 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
@@ -648,6 +649,39 @@ section,
   line-height: 0;
 }
 
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.certification-item {
+  position: relative;
+  width: 100px;
+  height: 115px;
+}
+
+.certification-item .hexagon {
+  position: absolute;
+  width: 100px;
+  height: 115px;
+  background: #fff;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  border: 2px solid #149ddd; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certification-item .hexagon img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+/* Additional modal styles if needed */
+.modal-body img {
+  width: 100%;
+}
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
